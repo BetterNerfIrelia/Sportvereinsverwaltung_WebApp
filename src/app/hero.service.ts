@@ -13,13 +13,13 @@ export class HeroService {
 
   getHeroes(): Observable<Hero[]> {
     // TODO: send the message _after_ fetching the heroes
-    this.messageService.add('HeroService: fetched heroes');
+    this.messageService.add('CompetitionService: fetched competitions');
     return of(HEROES);
   }
 
   getHero(id: number): Observable<Hero> {
     // TODO: send the message _after_ fetching the hero
-    this.messageService.add(`HeroService: fetched hero id=${id}`);
+    this.messageService.add(`CompetitionService: fetched competition id=${id}`);
     return of(HEROES.find(hero => hero.id === id));
   }
 }
