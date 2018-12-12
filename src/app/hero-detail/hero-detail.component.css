@@ -6,6 +6,13 @@ label {
   color: #607D8B;
   font-weight: bold;
 }
+
+h2{
+  color: #607D8B;
+}
+span{
+  color: #607D8B;
+}
 input {
   height: 2em;
   font-size: 1em;

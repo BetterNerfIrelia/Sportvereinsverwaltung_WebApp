@@ -21,6 +21,11 @@
   left: .1em;
 }
 
+h2{
+  color: #607D8B;
+
+}
+
 .heroes a {
   color: #888;
   text-decoration: none;

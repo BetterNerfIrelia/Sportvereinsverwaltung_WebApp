@@ -22,6 +22,14 @@ export class HeroService {
 
   /** GET heroes from the server */
   getHeroes (): Observable<Hero[]> {
+
+    fetch('http://10.0.51.90:8181/sportmanagement-0.0.1-SNAPSHOT/competition/')
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+      });
+
+
     return this.http.get<Hero[]>(this.heroesUrl)
       .pipe(
         tap(_ => this.log('fetched competitions')),
