@@ -6,8 +6,31 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class InMemoryDataService implements InMemoryDbService {
-  createDb() {
-    const heroes = [
+
+
+
+
+createDb() {
+
+  fetch('http://10.0.51.90:8181/sportmanagement-0.0.1-SNAPSHOT/competition/')
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      console.log(data[0]);
+      console.log("Tournament[0]: ");
+      console.log("ID: " + data[0].id);
+      console.log("Name: " + data[0].name);
+      console.log("Sportart: " + data[0].typeOfSportName);
+      console.log("Liga: " + data[0].leagueName);
+      console.log("Gebühr: " + data[0].fee);
+      console.log("Ort: " + data[0].location);
+      console.log("Startdatum: " + data[0].startDate);
+      console.log("Enddatum: " + data[0].endDate);
+      console.log("Begegnungen: " + data[0].begegnungen);
+
+    });
+
+  const heroes = [
       { id: 1, name: 'Weihnachtsspiele', sportart: 'Fussball' },
       { id: 2, name: 'Silvesterspiele' },
       { id: 3, name: 'Osterturnier' },

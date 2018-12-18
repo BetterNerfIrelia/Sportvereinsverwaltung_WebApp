@@ -26,7 +26,6 @@ export class HeroService {
     fetch('http://10.0.51.90:8181/sportmanagement-0.0.1-SNAPSHOT/competition/')
       .then(response => response.json())
       .then(data => {
-        console.log(data);
       });
 
 
