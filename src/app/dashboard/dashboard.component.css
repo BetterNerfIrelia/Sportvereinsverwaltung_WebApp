@@ -17,15 +17,21 @@ a {
 }
 
 h2{
-  color: #607D8B;
+  font-family: Verdana, Geneva, sans-serif;
+  color: white;
+  margin-left: 0.5rem;
 
 }
 h3 {
+  font-family: Verdana, Geneva, sans-serif;
   text-align: center;
   margin-bottom: 0;
 }
 h4 {
+  font-family: Verdana, Geneva, sans-serif;
   position: relative;
+  font-size: 1.2em;
+
 }
 .grid {
   margin: 0;
@@ -39,13 +45,13 @@ h4 {
   color: #eee;
   max-height: 120px;
   min-width: 120px;
-  background-color: #607d8b;
+  background-color: #1ebc66;
   border-radius: 2px;
 }
 .module:hover {
   background-color: #eee;
   cursor: pointer;
-  color: #607d8b;
+  color: #1ebc66;
 }
 .grid-pad {
   padding: 10px 0;

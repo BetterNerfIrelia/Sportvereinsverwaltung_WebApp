@@ -8,7 +8,7 @@
 .heroes li {
   position: relative;
   cursor: pointer;
-  background-color: #EEE;
+  background-color: #607D8B;
   margin: .5em;
   padding: .3em 0;
   height: 1.6em;
@@ -22,7 +22,7 @@
 }
 
 h2{
-  color: #607D8B;
+  color: #336699;
 
 }
 

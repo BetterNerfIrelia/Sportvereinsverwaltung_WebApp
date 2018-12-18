@@ -1,16 +1,22 @@
+
 <div *ngIf="hero">
   <h2>{{hero.name | uppercase}} Details</h2>
-  <div><span>ID: </span>{{hero.id}}</div>
-  <div><span>Name: </span>{{hero.name}}</div>
-  <div><span>Sportart: </span>{{hero.sportart}}</div>
-  <div><span>Liga: </span>{{hero.liga}}</div>
-  <div><span>Gebühr: </span>{{hero.gebuehr}}</div>
-  <div><span>Ort: </span>{{hero.ort}}</div>
-  <div><span>Startdatum: </span>{{hero.startdatum}}</div>
-  <div><span>Enddatum: </span>{{hero.enddatum}}</div>
-  <div><span>Begegnungen: </span>{{hero.begegnungen}}</div>
+  <ul class="heroes">
+    <li><div><span>&nbsp;&nbsp;ID: </span>{{hero.id}}</div></li>
+    <li><div><span>&nbsp;Name: </span>{{hero.name}}</div></li>
+    <li><div><span>&nbsp;Sportart: </span>{{hero.sportart}}</div></li>
+    <li><div><span>&nbsp;Gebühr: </span>{{hero.gebuehr}}</div></li>
+    <li><div><span>&nbsp;Ort: </span>{{hero.ort}}</div></li>
+    <li><div><span>&nbsp;Startdatum: </span>{{hero.startdatum}}</div></li>
+    <li><div><span>&nbsp;Enddatum: </span>{{hero.enddatum}}</div></li>
+    <li><div><span>&nbsp;Begegnungen: </span>{{hero.begegnungen}}</div></li>
+  </ul>
 
-  <button (click)="goBack()">Zurück</button>
-  <!--<button (click)="save()">Speichern</button>-->
+
+  <button (click)="goBack()"><img src="assets/back.png" width="30px" />
+  </button>
 </div>
+
+
+
 
